@@ -47,20 +47,31 @@ Make sure symfony-cli is installed globally, as explained in the
 of Symfony.
 
 
-### Step 1: Run a server
+### Step 1: Get sources
 
 ```console
 $ git clone git@github.com:mazarini/skeleton-bundle.git
+```
+
+
+### Step 2: Install demo
+
+```console
 $ cd skeleton-bundle/.demo
 $ composer install
+$ yarn install
 $ yarn dev
+```
+
+### Step 3: Run server and views pages
+
+```console
 $ symfony server:start
 ```
 
-### Step 2: Views pages
+ Now, you can open a browser at https://127.0.0.1:8000
 
- Open a browser at https://127.0.0.1:8000
 
-### Step 3: Views twig examples
+### Step 4: Views twig examples
 
 All twig's examples are in .demo/templates.
