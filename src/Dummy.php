@@ -23,6 +23,9 @@ namespace Mazarini\SkeletonBundle;
 
 class Dummy implements \Stringable
 {
+    private string $dummyString = "dummy";
+    private int $dummyInt = 42;
+
     public function __toString(): string
     {
         return self::class;
